@@ -7,7 +7,7 @@ if not speaker then
 end
 
 -- URL of the .dfpwm file in the GitHub repository (raw link)
-local url = "raw.githubusercontent.com/Fish1rs/CC-Music/main/bye-bye.dfpwm"
+local url = "https://raw.githubusercontent.com/Fish1rs/CC-Music/main/bye-bye.dfpwm"
 
 -- Path to save the downloaded file locally
 local filePath = "bye-bye.dfpwm"
