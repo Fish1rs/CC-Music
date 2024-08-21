@@ -15,13 +15,22 @@ local filePath = "bye-bye.dfpwm"
 -- Function to download a file from a URL
 local function downloadFile(url, path)
     local response = http.get(url)
+    
+    -- Debug output
     if response then
+        local contentType = response.getResponseCode()
+        if contentType == 200 then
+            print("Successfully connected to the URL.")
+        else
+            print("Failed to connect. HTTP response code: " .. contentType)
+        end
         local file = fs.open(path, "wb")
         file.write(response.readAll())
         file.close()
         response.close()
         return true
     else
+        print("Failed to get response from URL.")
         return false
     end
 end
