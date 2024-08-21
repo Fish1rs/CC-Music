@@ -7,10 +7,10 @@ if not speaker then
 end
 
 -- URL of the .dfpwm file in the GitHub repository (raw link)
-local url = "https://github.com/Fish1rs/CC-Music/raw/main/_NSYNC%20-%20Bye%20Bye%20Bye%20(Lyrics)%20(Deadpool%203%20Soundtrack).dfpwm"
+local url = ""
 
 -- Path to save the downloaded file locally
-local filePath = "_NSYNC - Bye Bye Bye (Lyrics) (Deadpool 3 Soundtrack).dfpwm"
+local filePath = "bye-bye.dfpwm"
 
 -- Function to download a file from a URL
 local function downloadFile(url, path)
